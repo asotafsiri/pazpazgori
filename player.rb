@@ -19,6 +19,7 @@ class Player
             coords = ask_for_coordinates
 
             # IF validate_coordinates_format is true
+            puts coords
             if validate_coordinates_format(coords)
                 # IF piece can be placed on Board
                 if @board.add_piece(coords, @piece)

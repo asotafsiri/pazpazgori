@@ -67,10 +67,10 @@ class Board
     # winning_combination?
     def winning_combination?(piece)
         # is there a winning_diagonal?
-        # or winning_vertical? 
+        # or winning_vertical?
         # or winning_horizontal? for that piece?
-        winning_diagonal?(piece)   || 
-        winning_horizontal?(piece) || 
+        winning_diagonal?(piece)   ||
+        winning_horizontal?(piece) ||
         winning_vertical?(piece)
     end
 
@@ -104,21 +104,21 @@ class Board
         [[ @board[0][0],@board[1][1],@board[2][2] ],[ @board[2][0],@board[1][1],@board[0][2] ]]
     end
 
-    # verticals
-    def verticals
-        # return the vertical pieces
+    # horizontals
+    def horizontals
+        # return the horizontals pieces
         @board
     end
 
-    # horizontals
-    def horizontals
-        # return the horizontal pieces
-        horizontals = []
-        3.times do |i|
-            horizontals << [@board[0][i],@board[1][i],@board[2][i]]
-        end
-        horizontals
+  # verticals
+  def verticals
+    # return the verticals pieces
+    verticals = []
+    3.times do |i|
+      verticals << [@board[0][i],@board[1][i],@board[2][i]]
     end
+    verticals
+  end
 
     # full?
     def full?
