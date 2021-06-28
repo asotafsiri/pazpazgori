@@ -1,2 +1,2 @@
 # pazpazgori
-it is traditional game
+it is traditional game espacially play in kurdistan
